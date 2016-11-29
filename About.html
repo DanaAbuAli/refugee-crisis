@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<!-- <meta name="viewport" content="width=device-width"> -->
+		<title>About- A World of Displacement</title> 
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+
+	<h1> A World of Displacement </h1>
+
+	<h2> Visualizing the impact of the current refugee crisis </h2>
+
+
+<h3> <span class= "first-word"> What </span>is it? </h3>
+
+<p> * A webpage that displays a visualization of the Mediterranean sea, and 20 boats floating in it <br></br>
+* The user is prompted to click the button of the year of which he/she would like to view the number of deaths for <br></br>
+* The death toll is reflected in the diminishing number of the boats as well as the increase in amplitude and frequency of the waves <br></br>
+</p>
+
+<h4> <span class= "first-word"> Why </span> do it? </h4>
+
+<p> * To use data visualization as a means to convey an important message about what's happening in the world right now <br></br>
+* To show the dramatic changes in refugee death toll in a short span of time <br></br>
+</p> 
+
+<h4> <span class= "first-word"> How </span> was it done? </h4>
+
+<p> 
+* Whenever any of the buttons is clicked, a request is sent to the 'UNHCR' api to retrieve the number of refugee deaths in the Mediterranean in the corresponding year <br></br>
+* A certain number of boats sink according to each year's death toll <br></br>
+* The amplitude and speed variables of the wave increase as the death toll increases and vice versa <br></br>
+
+
+<h5> <span class= "first-word"> Which </span> resources were used? </h5>
+
+<p> * UNHCR web API <br></br>
+* Examples of waves done by Daniel Shiffman 
+
+<h6> <span class= "first-word"> What </span> were the challenges faced, feedback received, and lessons learnt? </h6>
+<p> * Challenges: <br></br>
+1. The biggest challenge in this project was to figure out how to design the page in a clear way for users to both use it and get the message across without adding detailed explanations  <br></br>
+2. Creating the wave and adding changes to its amplitude, speed, and other attributes was difficult at first, but with trial and error it was solved  <br></br>
+3. I found it hard to apply the noise function, which I used for the waves, to the boats to make them look like they are floating on top. After trying and failing to do so, I applied another wave-generating function, the sine function, which gave the boats the floating look I wanted, but it still isn't as synchronized with the boats. One solution for that was to apply the sine function to the waves as well, but I chose not to do that because I felt that the noise function made it look more real (more random). (Plus I really didn't want the hours of figuring out how to implement the noise function to go to waste) <br></br>
+4. To make sure that users see the effect of the death toll on the boats displayed, I made them disappear gradually by incrementing both the x and y values to make it seem like they are sinking. This seems to work when the user clicks the first button of choice, but if she/he clicked one right after, without refreshing the page, the boats would simply disappear without the sinking motion.  <br></br>
+
+
+* Feedback: <br></br>
+1. The initial feedback was that it was difficult to figure out how the number of boats and the death toll being displayed on the screen are related.  <br></br>
+2. All users seemed to like the waves <br></br>
+3. Initially, I added both the number of arrivals and number of deaths in the Mediterranean, but users found that distracting, and it reduced the emphasis on the number of deaths because it did not look as significant compared to the number of arrivals <br></br>
+4. The boats moving in a straight horizontal line wasn't visually appealing, in comparison with the waves, so people suggested to add a more floating manner to their movement <br></br>
+
+* Lessons: <br></br>
+1. I learned how powerful math functions and algorithms in creating movement <br></br>
+2. It is important to show the changes in data clearly, especially when it comes to an issue as critical as the refugee crisis  <br></br>
+3. Sometimes, you need to give up on making something, in order to make the other things you did clearer. I learned that when I had to remove the data I originally had about the number of arrivals so that I emphasize the number of deaths more, which is the main message here. I also did not add information about the number of boats lost to make people pay attention to the change in boats rather than simply read that change <br></br>
+4. User feedback is priceless <br></br>
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="about.css" />
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="project1.js"></script>
+
+ 
+
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> 
+	
+	</body>
+</html>

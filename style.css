@@ -1,0 +1,54 @@
+h1 {
+	text-align: center;
+	font-family: "Courier New", Monospace;
+	font-size: 200%;
+	font-style: italic;
+	background-color: rgb(156,156,156);
+}
+
+h2 {
+	text-align: left;
+	color: black;
+	font-family: "Courier New", Monospace;
+	font-size: 100%;
+	background-color: rgb(156,156,156);
+}
+h3{
+	color: rgb(64,64,64);
+	text-align: center;
+	font-family: "Courier New", Monospace;
+	font-size: 100%;
+	
+}
+
+p {
+	text-align: center;
+	color: black;
+	font-family: "Courier New", Monospace;
+	font-size: 100%;
+}
+
+h4{
+	
+	color: rgb(159,30,30);
+	text-align: center;
+	font-family: "Courier New", Monospace;
+	font-size: 150%;
+	
+}
+
+a {
+	text-align: left;
+	font-family: "Courier New", Monospace;
+	font-size: 100%;
+	color: white;
+}
+
+body {
+	background-color: rgb(156,156,156);
+}
+button{
+	background-color: black;
+	color: white;
+	stroke: none;
+}
